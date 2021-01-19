@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form Page</title>
+    </head>
+
+    <body>
+        <form method="POST">
+            <!--Grouping tag-->
+            <fieldset>
+
+                <!--in order for browser to collect their values correctly, must have name attribute to each input field-->
+
+                <label>First name:</label>
+                <!--must specify to web browser what type of input the tag is refering to-->
+                <!--input tag doesn't wrap any content so doesn't need to be closed-->
+                <input type="text" name="firstname">
+
+                <!--line break, will use CSS later but for now its okay-->
+                <br> <br>
+                <label> Last name: </label> 
+                <input type = "text" name="lastname">
+
+                <br> <br>
+                <label> Gender: </label>
+                <!--if no name="gender" then you can click on both because they're not grouped together-->
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+
+                <br> <br>
+                <label> Country of Origin: </label>
+                <select name="countryoforigin"> 
+                    <option> France </option>
+                    <option> Italy</option>
+                    <option>UK</option>
+                    <option>USA</option>
+                </select>
+
+                <br> <br>
+                <label>Notes:</label>
+                <textarea name="notes" cols="80" rows="10"></textarea>
+
+                <br><br>
+                <!--value=name of the label on the button-->
+                <input type="submit" value="Register">
+
+                <!--more flexible as what you can put for the value-->
+                <button type="submit">Please Register</button>
+
+            </fieldset>
+        </form>
+    </body>
+</html>
